@@ -7,23 +7,23 @@ HEADER:
   label: "Show Contacts"
 
 USER:
-  role: "iOS Developer"
-  name: "Richard Hendricks"
-  username: "richardhendricks" # <-- This needs to be the same as your GitHub username
-  avatar: "config/assets/avatars/my-avatar.png"
+  role: "Software Engineer"
+  name: "Ashley Li"
+  username: "ashleylyh" # <-- This needs to be the same as your GitHub username
+  avatar: "config/assets/avatars/my-avatar.jpg"
 
 INFO:
   - label: "Email"
-    value: "richard@example.com"
+    value: "yuhsi.1026@gmail.com"
     icon: "mail-outline"
   - label: "Phone"
-    value: "+1 (213) 352-2795"
+    value: "+886 0988183646"
     icon: "phone-portrait-outline"
   - label: "Birthday"
-    value: "June 26, 1996"
+    value: "Oct. 26, 2002"
     icon: "calendar-outline"
   - label: "Location"
-    value: "Sacramento, California, USA"
+    value: "Taiwan"
     icon: "location-outline"
 
 SOCIAL:
@@ -34,8 +34,6 @@ SOCIAL:
   - icon: "logo-instagram"
     url: "https://instagram.com/"
   - icon: "logo-linkedin"
-    url: "https://www.linkedin.com/"
+    url: "https://www.linkedin.com/ashleylyh"
   - icon: "logo-github"
-    url: "https://github.com/ivansaul"
-  - icon: "logo-dribbble"
-    url: "https://dribbble.com/"
+    url: "https://github.com/ashleylyh"
