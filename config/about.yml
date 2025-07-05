@@ -15,16 +15,17 @@ DOING:
   label: "What I'm doing | Interested in"
   items:
     - title: "Computer Vision"
-      icon: "config/assets/icons/mobile.svg"
+      icon: "tv"
+      # icon: "config/assets/icons/mobile.svg"
       description: "Developing real-time object detection and tracking systems with YOLO; researching generative AI for advanced image synthesis."
     - title: "Machine Learning"
       icon: "config/assets/icons/code.svg"
       description: "Investigating state-of-the-art NLP and deep learning architectures—including transformer-based models—for practical applications."
     - title: "Computer Architecture"
-      icon: "config/assets/icons/compass.svg"
+      icon: "desktop"
       description: "Optimizing GPU-accelerated parallel-compute frameworks and exploring hardware-software co-design for high-performance systems."
     - title: "Computer Graphics"
-      icon: "config/assets/icons/laptop-code.svg"
+      icon: "film"
       description: "Studying graphics pipelines at both software and hardware levels, from real-time shader development to GPU rendering optimization."
 
 
@@ -82,6 +83,7 @@ TECHNOLOGIES:
     - title: "MATLAB"
     - title: "MIPS"
     - title: "Adobe Illustrator"
+      icon: "config/assets/icons/ai.svg"
     - title: "Final Cut Pro"
     - title: "Notion"
     - title: "Anaconda"
