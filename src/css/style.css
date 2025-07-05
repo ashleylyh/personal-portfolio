@@ -753,10 +753,15 @@ main {
 
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
-  width: max-content;
+  /* width: max-content; */
+  width: 80px;
+  height: 80px;
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-img-wrapper > img {
@@ -820,6 +825,34 @@ main {
   filter: grayscale(0);
 }
 
+.clients-item {
+  position: relative;
+}
+
+/* 建立一個隱藏的 ::after 作為 tooltip */
+.clients-item::after {
+  content: attr(data-title); /* 讀 data-title 屬性 */
+  position: absolute;
+  bottom: 100%; /* 在圖示正上方 */
+  left: 50%;
+  transform: translateX(-50%) /* 置中 */ translateY(-8px); /* 往上推一些 */
+  padding: 4px 8px;
+  background: rgba(64, 58, 58, 0.75);
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  /* 不要讓 tooltip 本身被 scrollbar 切掉 */
+  z-index: 10;
+}
+
+/* 滑鼠移進到 li 時顯示 tooltip */
+.clients-item:hover::after {
+  opacity: 1;
+}
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -1593,7 +1626,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .modal-avatar-box img {
-    width: 65px;
+    width: 30px;
   }
 
   .modal-img-wrapper > img {
@@ -1733,7 +1766,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .modal-avatar-box img {
-    width: 80px;
+    width: 30px;
   }
 
   /**

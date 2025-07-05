@@ -69,7 +69,7 @@
         <figure class="modal-avatar-box">
           <img src="./src/images/avatar-1.png" alt="{{profile.USER.name}}" width="80" data-modal-img>
         </figure>
-        <img src="../../config/assets/icons/ellipsis.svg" alt="quote icon">
+        <img src="config/assets/icons/ellipsis.svg" alt="quote icon">
       </div>
       <div class="modal-content">
         <h4 class="h3 modal-title" data-modal-title>{{profile.USER.name}}</h4>
@@ -90,7 +90,7 @@
     <h3 class="h3 clients-title">{{about.TECHNOLOGIES.label}}</h3>
     <ul class="clients-list has-scrollbar">
       {% for item in about.TECHNOLOGIES["items"] %}
-      <li class="clients-item">
+      <li class="clients-item" data-title="{{item.title}}">
         <a href="#">
           <img src="{{item.icon}}" alt="{{item.title}}" width="50" height="50">
         </a>
