@@ -133,6 +133,7 @@ button,
 time,
 span {
   display: block;
+  color: var(--vegas-gold);
 }
 
 button {
@@ -570,6 +571,7 @@ main {
 
 .service-icon-box {
   margin-bottom: 10px;
+  color: var(--orange-yellow-crayola);
 }
 
 .service-icon-box img {
