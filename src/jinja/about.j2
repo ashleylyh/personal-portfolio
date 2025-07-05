@@ -21,7 +21,7 @@
       {% for item in about.DOING["items"] %}
       <li class="service-item">
         <div class="service-icon-box">
-          <ion-icon name="{{item.icon}}" alt="design icon" width="30" height="30"></ion-icon>
+          <ion-icon name="{{item.icon}}" alt="design icon"></ion-icon>
         </div>
         <div class="service-content-box">
           <h4 class="h4 service-item-title">{{item.title}}</h4>
@@ -44,7 +44,7 @@
       <li class="testimonials-item">
         <div class="content-card" data-testimonials-item>
           <figure class="testimonials-avatar-box">
-            <ion-icon name="{{item.icon}}" alt="{{item.title}} width="60" data-testimonials-avatar></ion-icon>
+            <img src="{{item.icon}}" alt="{{item.title}}" width="60" data-testimonials-avatar>
           </figure>
           <h4 class="h4 testimonials-item-title" data-testimonials-title>{{item.title}}</h4>
           <div class="testimonials-text" data-testimonials-text>
@@ -69,7 +69,7 @@
         <figure class="modal-avatar-box">
           <img src="./src/images/avatar-1.png" alt="{{profile.USER.name}}" width="80" data-modal-img>
         </figure>
-        <ion-icon name="pulse" alt="quote icon"></ion-icon>
+        <img src="../../config/assets/icons/ellipsis.svg" alt="quote icon">
       </div>
       <div class="modal-content">
         <h4 class="h3 modal-title" data-modal-title>{{profile.USER.name}}</h4>

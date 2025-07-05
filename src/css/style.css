@@ -574,9 +574,10 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-.service-icon-box img {
+.service-icon-box ion-icon {
   margin: auto;
   color: var(--orange-yellow-crayola);
+  font-size: 30px;
 }
 
 .service-content-box {
@@ -634,10 +635,11 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-1);
   color: var(--orange-yellow-crayola);
-}
-
-.testimonials-avatar-box img {
-  color: var(--orange-yellow-crayola);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials-item-title {
@@ -1551,7 +1553,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .testimonials-avatar-box img {
-    width: 80px;
+    width: 30px;
   }
 
   .testimonials-item-title {
