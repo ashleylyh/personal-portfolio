@@ -3,26 +3,30 @@ HEADER:
 
 PRESENTATION:
   description: |
-    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+    I'm a Software Engineer from Taiwan, passionate about Computer Vision, Machine Learning, and Visual related Technologies. With solid experience in machine learning, software systems development, and full-stack web applications.
+    
+    I recently graduated from The Hong Kong University of Science and Technology with a BEng in Computer Engineering and a minor in Big Data Technology. 
+    Currently, I work as a Research Assistant at Academia Sinica, where I contribute to cutting-edge research projects.  
 
-    My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+    Feel free to connect and get in touch with me :)
 
 DOING:
   enabled: true
-  label: "What I'm doing"
+  label: "What I'm doing | Interested in"
   items:
-    - title: "Mobile Apps"
+    - title: "Computer Vision"
       icon: "config/assets/icons/mobile.svg"
-      description: "Professional development of applications for iOS and Android."
-    - title: "Scripting"
+      description: "Developing real-time object detection and tracking systems with YOLO; researching generative AI for advanced image synthesis."
+    - title: "Machine Learning"
       icon: "config/assets/icons/code.svg"
-      description: "Automation and task scripting using Python to enhance efficiency and productivity."
-    - title: "UI/UX Designing"
+      description: "Investigating state-of-the-art NLP and deep learning architectures—including transformer-based models—for practical applications."
+    - title: "Computer Architecture"
       icon: "config/assets/icons/compass.svg"
-      description: "Intuitive and visually appealing user interfaces and user experiences."
-    - title: "Web Development"
+      description: "Optimizing GPU-accelerated parallel-compute frameworks and exploring hardware-software co-design for high-performance systems."
+    - title: "Computer Graphics"
       icon: "config/assets/icons/laptop-code.svg"
-      description: "High-quality development of sites at the professional level."
+      description: "Studying graphics pipelines at both software and hardware levels, from real-time shader development to GPU rendering optimization."
+
 
 SKILLS:
   enabled: true
@@ -47,25 +51,38 @@ TECHNOLOGIES:
   items:
     - title: "Python"
       icon: "config/assets/icons/python.svg"
-    - title: "Flutter"
+    - title: "C++"
       icon: "config/assets/icons/flutter.svg"
     - title: "Git"
       icon: "config/assets/icons/git.svg"
     - title: "Figma"
       icon: "config/assets/icons/figma.svg"
-    - title: "Firebase"
+    - title: "TensorFlow"
       icon: "config/assets/icons/firebase.svg"
     - title: "Pandas"
       icon: "config/assets/icons/pandas.svg"
-    - title: "MongoDB"
+    - title: "PyTorch"
       icon: "config/assets/icons/mongodb.svg"
-    - title: "Dart"
+    - title: "Numpy"
       icon: "config/assets/icons/dart.svg"
-    - title: "HTML"
+    - title: "Apache Spark"
       icon: "config/assets/icons/html.svg"
-    - title: "AI"
+    - title: "Docker"
       icon: "config/assets/icons/ai.svg"
-    - title: "Jupyter"
+    - title: "AWS Cloud Computing"
       icon: "config/assets/icons/jupyter.svg"
     - title: "Linux"
       icon: "config/assets/icons/linux.svg"
+    - title: "Apache Hadoop"
+    - title: "TypeScript"
+    - title: "JavaScript"
+    - title: "React"
+    - title: "C"
+    - title: "Java"
+    - title: "MATLAB"
+    - title: "MIPS"
+    - title: "Adobe Illustrator"
+    - title: "Final Cut Pro"
+    - title: "Notion"
+    - title: "Anaconda"
+    - title: "LaTeX"
