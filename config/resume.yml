@@ -5,32 +5,87 @@ EDUCATION:
   enabled: true
   label: "Education"
   items:
-    - period: "2002 — 2004"
-      institution: "High School of Art and Design"
-      description: "Graduated with honors, focusing on visual arts and design principles. Participated in multiple student exhibitions, honing skills in drawing, painting, and graphic design."
-    - period: "2005 — 2007"
-      institution: "Brooklyn Technical High School"
-      description: "Completed coursework in computer science and digital media, with a particular focus on web development and programming. Collaborated on projects involving coding and design integration."
-    - period: "2006 — 2007"
-      institution: "New York Academy of Art"
-      description: "Studied fine arts with a focus on sculpture and advanced painting techniques. Took part in workshops and intensive studio sessions, receiving feedback from industry professionals."
-    - period: "2007 — 2008"
-      institution: "University School of the Arts"
-      description: "Pursued a Bachelor of Fine Arts degree, specializing in interactive media and digital design. Graduated with a portfolio of projects blending traditional art forms with emerging technologies."
+    - period: "2015/8 - 2021/6"
+      institution: "National Experimental High School at Hsinchu Science Park (Taiwan)"
+      description: "Graduated with GPA 4.0/4.3, serve as the financial manager of Dance society and the Lead Coordinator of Joint-Club Annual Performance."
+      coursework:
+    - period: "2023/8 - 2024/1"
+      institution: "Chalmers University of Technology (Sweden)"
+      description: "Exchanged to Chalmers University of Technology in Sweden for one semester, focusing on advanced computer science courses and cultural experiences."
+      coursework:
+        - "Applied Signal Processing"
+        - "Computer Graphic"
+        - "Image Processing"
+        - "Algorithm"
+    - period: "2021/8 - 2025/7"
+      institution: "The Hong Kong University of Science and Technology (Hong Kong)"
+      description: "Graduated with Second Class Honours (Division One) in BEng in Computer Engineering with a minor in Big Data Technology."
+      coursework:
+        - "Machine Learning"
+        - "Deep Learning in Computer Vision"
+        - "Natural Language Processing"
+        - "Parallel Programming"
+        - "Computer Architecture"
+        - "Operating Systems"
+        - "Cloud Computing and Big Data Systems"
+        - "Signal Processing"
+        - "Object-Oriented Programming"
+
+
+AWARD:
+  enabled: true
+  label: "Awards & Honors"
+  items:
+    - title: "HKSAR Government Scholarship - Reaching Out Award"
+      date: "2023"
+      description: "HKUST Undergraduate Exchanged Scholarship."
 
 EXPERIENCE:
   enabled: true
   label: "Experience"
   items:
-    - period: "2010 — 2013"
-      position: "Web Designer"
-      description: "Worked on the design and development of websites for small to medium-sized businesses. Collaborated closely with developers to ensure responsive and user-friendly designs. Led the redesign of the company’s website, improving user engagement by 25%."
-    - period: "2013 — 2015"
-      position: "Art Director"
-      description: "Led a team of designers to create visually stunning campaigns for major clients in the advertising industry. Managed the creative direction of print and digital media, ensuring consistent branding and high-quality designs. Oversaw the production of advertisements that won industry awards."
-    - period: "2015 — Present"
-      position: "Creative Director"
-      description: "Direct and oversee the creative process for a range of projects, from concept to execution. Lead cross-functional teams to create innovative design solutions for branding, marketing, and digital experiences. Recently led the redesign of a global brand’s digital presence, increasing online sales by 40%."
+    - period: "2025/7 - Present"
+      position: "Research Assistant @ Academia Sinica (Taiwan)"
+      description: ""
+    - period: "2024/7 - 2025/7"
+      position: "Lead Project Coordinator @ HKUST Path Advisor"
+      description: 
+        - "Coordinator of path advisor student team, cooperating with professor and ITSC department."
+        - "Responsible for teams' communication, and production/ development of new features."
+        - "Issue-shooting to provide a better user experience, and handle user feedback to improve the map application."
+    - period: "2024/6 - 2024/8"
+      position: "Autonomous Driving Software Engineer Intern @ ITRI (Taiwan)"
+      description:
+       - "Developed simulation scenario management system's backend data logic and API endpoints using TypeScipt and Python for efficient data management."
+       - "Set up and develop a server for automating visualizing simulation scenarios, including schematic image and video generation."
+       - "Gained expertise in MongoDB, API development, and multithreading for efficient resource allocation."
+       - "Documentation and Unit testing achieve 95% coverage for the scenario management system."
+    - period: "2023/6 - 2023/8"
+      position: "Software Engineer Intern @ NovBee (Hong Kong)"
+      description:
+        - "Developed new frontend features for the web application using React and TypeScript, enhancing user experience and functionality."
+        - "Defined and implemented page structure and layout using React components, ensuring a modular and maintainable codebase."
+        - "Collaborated closely with the UI/UX team to ensure design consistency"
+    - period: "2022/9 - 2024/7"
+      position: "Frontend Developer @ HKUST Path Advisor"
+      description:
+        - "Maintain and improve frontend code using JavaScript for an intuitive and user-friendly web interface."
+        - "Collaborate closely with the ITSC department to ensure seamless integration of features."
+        - "Edit and update campus maps using data received from ITSC, ensuring accuracy and relevancy."
+    - period: "2022/7 - 2022/8"
+      position: "Software Engineer Intern @ Wiadvance (Taiwan)"
+      description:
+        - "Researched and optimized customer service systems for a new cloud app release, enhancing user experience."
+        - "Debugged and improved internal website backend APIs for reliability and performance."
+    - period: "2022/6 - 2023/7"
+      position: "Publicity Manager @ HKUST Taiwanese Students' Association"
+      description: ""
+    - period: "2022/9 - 2024/1"
+      position: "UIUX Designer @ USThing"
+      description: ""
+    - period: "2021/9 - 2023/6"
+      position: "Marketing Team Member @ HKUST Be Our Guest"
+      description: ""
 
 LANGUAGES:
   enabled: true
@@ -38,22 +93,20 @@ LANGUAGES:
   display_percentage_values: true
   label: "Languages"
   items:
-    - language: "Inglés"
-      proficiency: "60%"
-    - language: "Francés"
-      proficiency: "40%"
+    - language: "Mandarin"
+      proficiency: "100%"
+    - language: "English"
+      proficiency: "80%"
+    - language: "Cantonese"
+      proficiency: "30%"
+    - language: "Korean"
+      proficiency: "30%"
 
 SKILLS:
-  enabled: true
+  enabled: false
   display_progress_bars: true
   display_percentage_values: true
   label: "My Skills"
   items:
-    - skill: "Web Design"
-      proficiency: "80%"
-    - skill: "Graphic Design"
-      proficiency: "70%"
-    - skill: "Branding"
-      proficiency: "90%"
-    - skill: "WordPress"
-      proficiency: "50%"
+    - skill: ""
+      proficiency: ""
