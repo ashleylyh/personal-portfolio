@@ -21,6 +21,16 @@
         <p class="timeline-text">
           {{item.description}}
         </p>
+        {% if item.coursework %}
+        <div class="coursework">
+          <h5 class="coursework-title">Coursework</h5>
+          <ul class="coursework-list">
+            {% for course in item.coursework %}
+            <li class="coursework-item">{{ course }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
       </li>
       {% endfor %}
     </ol>
@@ -32,12 +42,12 @@
   <section class="timeline">
     <div class="title-wrapper">
       <div class="icon-box">
-        <ion-icon name="book-outline"></ion-icon>
+        <ion-icon name="bar-chart-outline"></ion-icon>
       </div>
       <h3 class="h3">{{resume.EXPERIENCE.label}}</h3>
     </div>
     <ol class="timeline-list">
-      {% for item in resume.EXPERIENCE["items"] | reverse %}
+      {% for item in resume.EXPERIENCE["items"] %}
       <li class="timeline-item">
         <h4 class="h4 timeline-item-title">{{item.position}}</h4>
         <span>{{item.period}}</span>
@@ -49,6 +59,30 @@
     </ol>
   </section>
   {% endif %}
+
+  <!-- AWARD -->
+  {% if resume.AWARD.enabled %}
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="trophy-outline"></ion-icon>
+      </div>
+      <h3 class="h3">{{ resume.AWARD.label }}</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.AWARD["items"] | reverse %}
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">{{ item.title }}</h4>
+        <span>{{ item.date }}</span>
+        {% if item.description %}
+        <p class="timeline-text">{{ item.description }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
 
   <!-- LANGUAGES -->
   {% if resume.LANGUAGES.enabled %}

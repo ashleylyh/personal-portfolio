@@ -971,6 +971,48 @@ main {
   border-radius: inherit;
 }
 
+/**
+ * coursework 
+ */
+
+.coursework {
+  margin-top: 12px;
+}
+.coursework-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  color: var(--white-2);
+  margin-bottom: 6px;
+}
+
+.coursework-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 24px;
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.5;
+}
+
+.coursework-item {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 4px;
+}
+
+.coursework-item::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  line-height: 1.2;
+  color: var(--orange-yellow-crayola);
+}
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
