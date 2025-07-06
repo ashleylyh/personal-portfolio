@@ -58,6 +58,12 @@
           {% endfor %}
         </ul>
         {% endif %}
+        {% if item.technologies %}
+        <p class="experience-tech">
+          <strong>Skills:</strong>
+          {{ item.technologies | join(', ') }}
+        </p>
+        {% endif %}
       </li>
       {% endfor %}
     </ol>

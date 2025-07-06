@@ -53,6 +53,11 @@ EXPERIENCE:
         - "Coordinator of path advisor student team, cooperating with professor and ITSC department."
         - "Responsible for teams' communication, and production/ development of new features."
         - "Issue-shooting to provide a better user experience, and handle user feedback to improve the map application."
+      technologies:
+        - Leadership
+        - Communication
+        - Project Management
+        - Full Stack Development
     - period: "2024/6 - 2024/8"
       position: "Autonomous Driving Software Engineer Intern @ ITRI (Taiwan)"
       description:
@@ -60,32 +65,61 @@ EXPERIENCE:
        - "Set up and develop a server for automating visualizing simulation scenarios, including schematic image and video generation."
        - "Gained expertise in MongoDB, API development, and multithreading for efficient resource allocation."
        - "Documentation and Unit testing achieve 95% coverage for the scenario management system."
+      technologies:
+        - TypeScript
+        - Python
+        - API Development
+        - CI/CD
+        - Git
     - period: "2023/6 - 2023/8"
       position: "Software Engineer Intern @ NovBee (Hong Kong)"
       description:
         - "Developed new frontend features for the web application using React and TypeScript, enhancing user experience and functionality."
         - "Defined and implemented page structure and layout using React components, ensuring a modular and maintainable codebase."
         - "Collaborated closely with the UI/UX team to ensure design consistency"
+      technologies:
+        - React
+        - CSS
+        - TypeScript
+        - Collaboration
     - period: "2022/9 - 2024/7"
       position: "Frontend Developer @ HKUST Path Advisor"
       description:
         - "Maintain and improve frontend code using JavaScript for an intuitive and user-friendly web interface."
         - "Collaborate closely with the ITSC department to ensure seamless integration of features."
         - "Edit and update campus maps using data received from ITSC, ensuring accuracy and relevancy."
+      technologies:
+        - JavaScript
+        - Frontend Development
     - period: "2022/7 - 2022/8"
       position: "Software Engineer Intern @ Wiadvance (Taiwan)"
       description:
         - "Researched and optimized customer service systems for a new cloud app release, enhancing user experience."
         - "Debugged and improved internal website backend APIs for reliability and performance."
+      technologies:
+        - Python
+        - API Development
     - period: "2022/6 - 2023/7"
       position: "Publicity Manager @ HKUST Taiwanese Students' Association"
       description: ""
+      technologies:
+        - Public Relations
+        - Event Promotion
+        - Content Creation
     - period: "2022/9 - 2024/1"
       position: "UIUX Designer @ USThing"
       description: ""
+      technologies:
+        - UI/UX Design
+        - User Research
+        - Prototyping
     - period: "2021/9 - 2023/6"
       position: "Marketing Team Member @ HKUST Be Our Guest"
       description: ""
+      technologies:
+        - Marketing
+        - Content Creation
+        - Social Media Management
 
 LANGUAGES:
   enabled: true
