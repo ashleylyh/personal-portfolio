@@ -929,6 +929,35 @@ main {
   line-height: 1.6;
 }
 
+.experience-list {
+  list-style-type: disc;
+  margin: 8px 0 16px 20px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+  padding: 0;
+}
+
+.experience-list li {
+  margin-bottom: 6px;
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 4px;
+}
+
+.experience-item::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  line-height: 1.2;
+  color: var(--orange-yellow-crayola);
+}
+
 /**
  * skills 
  */

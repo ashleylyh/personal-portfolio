@@ -51,9 +51,13 @@
       <li class="timeline-item">
         <h4 class="h4 timeline-item-title">{{item.position}}</h4>
         <span>{{item.period}}</span>
-        <p class="timeline-text">
-          {{item.description}}
-        </p>
+        {% if item.description %}
+        <ul class="experience-list">
+          {% for point in item.description %}
+          <li class="experience-item">{{ point }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </li>
       {% endfor %}
     </ol>
