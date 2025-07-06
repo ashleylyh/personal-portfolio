@@ -40,7 +40,7 @@ SKILLS:
       icon: "config/assets/icons/people.svg"
       description: "I collaborate effectively in multidisciplinary projects and communicate clearly with team members."
     - title: "Problem Solving"
-      icon: "config/assets/icons/settings.svg"
+      icon: "config/assets/icons/setting.svg"
       description: "I am creative and efficient in identifying and solving technical problems."
     - title: "Effective Communication"
       icon: "config/assets/icons/chatbubbles.svg"
