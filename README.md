@@ -141,3 +141,16 @@ MIT
 [desktop-screenshot]: https://i.imgur.com/xKkMSwR.png
 [mobile-screenshot]: https://i.imgur.com/G1A1nBu.png
 [imgur]: https://imgur.com
+
+
+## Notes
+icon: https://techicons.dev/icons
+
+if you want to change the color scheme, go to `src/css/style.css` and replace the `--bg-gradient-main-1`, `--text-gradient-main`, `--main-1`, and `--main-2` variables with your desired colors.
+
+you can build the page locally by running the following command:
+
+```bash
+python main.py
+``` 
+This will generate the `index.html` file in the root folder, which you can open in your browser to see the changes.
