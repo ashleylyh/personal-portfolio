@@ -1,73 +1,74 @@
 HEADER:
-  label: "Portfolio"
+  label: "Project"
 
 PROJECTS:
-  - title: "Flutter Cinemapedia App"
-    category: "Mobile development"
-    image: "https://i.imgur.com/ANDVQ4o.png"
-    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
-
-  - title: "Flutter Coffee Shop App"
-    category: "Mobile development"
-    image: "https://imgur.com/2nNXhDN.png"
+  - title: "Final Year Project - Developing an AI System for Smart Traffic: From Vehicle Detection to Data Analytics Dashboard"
+    category: "AI"
+    image: "src/images/fyp.jpg"
+    url: ""
+    report_url: ""
+    detail: |
+      This project aims to develop an AI system for smart traffic management, focusing on vehicle detection, tracking, data analytics and system migration. The system will utilize YOLO11 model with computer vision techniques to detect vehicles in real-time and analyze traffic patterns, providing valuable insights for urban planning and traffic optimization. 
+      
+      Key features include:
+      - Real-time vehicle detection and tracking using YOLO11 model.
+      - Data analytics dashboard for visualizing traffic patterns and trends.
+      
+      Key technologies used:
+      - YOLO11 model for vehicle detection.
+      - ByteTrack algorithm for real-time tracking.
+      - Fast API for building the backend API.
+      - Streamlit for creating the data analytics dashboard.
+    
+  - title: "Deepfake Image Classification"
+    category: "AI"
+    image: "src/images/comp4471.png"
     url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+    report_url: ""
+    detail: |
+      This project is part of my Deep Learning in Computer Vision course (COMP4471). Our project focuses on addressing the classification challenge: determining the most effective approach for distinguishing real images from AI-generated ones.
+      
+      We utilize CiFake dataset and investigate:
+      - How various convolutional neural network (CNN) architectures perform in this classification task, including VGG16, ResNet50, MobileNet, and EfficientNet.
+      - Whether Vision Transformers (ViT), a newer model architecture, offer superior performance compared to traditional CNNs.
+      - If integrating Error Level Analysis (ELA), an image processing technique for identifying compression artifacts, enhances the performance of smaller models in detecting subtle AI-generated image features.
+      
+      Key technologies used:
+      - PyTorch for deep learning model development.
+      - CiFake dataset for training and testing.
+      - Error Level Analysis (ELA) for image processing.
 
-  - title: "Flutter Todo App"
-    category: "Mobile development"
-    image: "https://imgur.com/7110Lj1.png"
+  - title: "AdaIN Style Transfer Model"
+    category: "AI"
+    image: "src/images/comp4211_pa2.jpg"
     url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
 
-  - title: "Flutter Travel News App"
-    category: "Mobile development"
-    image: "https://imgur.com/t5T5Ixa.png"
+  - title: "Machine Learning Exploration"
+    category: "AI"
+    image: "src/images/comp4211_pa1.jpg"
     url: "https://github.com/ivansaul/flutter_travel_news_app#screenshots"
 
-  - title: "Codigo Facilito Downloader"
-    category: "Python Scripting"
-    image: "https://imgur.com/kyHrBGk.png"
+  - title: "Hong Kong Horse Racing Prediction"
+    category: "AI"
+    image: "src/images/comp4211_project.jpg"
     url: "https://github.com/ivansaul/codigo_facilito_downloader"
 
-  - title: "Finance"
-    category: "Web development"
-    image: "config/assets/projects/project-1.jpg"
+  - title: "Auto Pet Feeder"
+    category: "Embedded Systems"
+    image: "src/images/elec3300.jpg"
     url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
 
-  - title: "Orizon"
-    category: "Web development"
-    image: "config/assets/projects/project-2.png"
+  - title: "Portraiture Image Processing"
+    category: "Image Processing"
+    image: "src/images/imageprocessing.jpg"
     url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
 
-  - title: "Fundo"
-    category: "Web design"
-    image: "config/assets/projects/project-3.jpg"
+  - title: "Height Field Rendering"
+    category: "Computer Graphics"
+    image: "src/images/computergraphic.jpg"
     url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
 
-  - title: "Brawlhalla"
-    category: "Applications"
-    image: "config/assets/projects/project-4.png"
+  - title: "Design Portfolio"
+    category: "Art & Design"
+    image: "src/images/portfolio.png"
     url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
-
-  - title: "DSM."
-    category: "Web design"
-    image: "config/assets/projects/project-5.png"
-    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
-
-  - title: "MetaSpark"
-    category: "Web design"
-    image: "config/assets/projects/project-6.png"
-    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
-
-  - title: "Summary"
-    category: "Web development"
-    image: "config/assets/projects/project-7.png"
-    url: "https://github.com/ivansaul/codigo_facilito_downloader"
-
-  - title: "Task Manager"
-    category: "Applications"
-    image: "config/assets/projects/project-8.jpg"
-    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
-
-  - title: "Arrival"
-    category: "Web development"
-    image: "config/assets/projects/project-9.png"
-    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"

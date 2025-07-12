@@ -33,21 +33,57 @@
         {% endfor %}
       </ul>
     </div>
+    <!-- 1. Project List -->
     <ul class="project-list">
       {% for item in projects.PROJECTS %}
-      <li class="project-item  active" data-filter-item data-category="{{item.category | lower}}">
-        <a href="{{item.url}}" target="_blank">
+      <li class="project-item active"
+          data-filter-item
+          data-category="{{ item.category | lower }}"
+          {% if item.detail %} data-modal-target="modal-{{ loop.index }}"{% endif %}>
+        <a href="#" class="project-link">
           <figure class="project-img">
-            <div class="project-item-icon-box">
+            <img src="{{ item.image }}"
+                 alt="{{ item.title }}"
+                 loading="lazy">
+            {% if item.detail %}
+            <div class="project-item-icon-box" data-modal-open>
               <ion-icon name="eye-outline"></ion-icon>
             </div>
-            <img src="{{item.image}}" alt="{{item.title}}" loading="lazy">
+            {% endif %}
           </figure>
-          <h3 class="project-title">{{item.title}}</h3>
-          <p class="project-category">{{item.category}}</p>
+
+          <h3 class="project-title">{{ item.title }}</h3>
+          <p class="project-category">{{ item.category }}</p>
         </a>
       </li>
       {% endfor %}
     </ul>
+
+    <!-- 2. Modals (rendered at root level, so they float above everything) -->
+    {% for item in projects.PROJECTS %}
+      {% if item.detail %}
+      <div class="project-modal" id="modal-{{ loop.index }}" data-modal>
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content">
+          <button class="modal-close" data-modal-close>&times;</button>
+          <h3>{{ item.title }}</h3>
+          <!-- project image in the modal -->
+         <img src="{{ item.image }}"
+              alt="{{ item.title }}"
+              class="modal-image">
+          <div class="modal-detail">
+            {{ item.detail  
+            | replace('\n', '<br>')  
+            | safe }}
+          </div>
+          <div class="modal-actions">
+            <a href="{{ item.url }}" target="_blank" class="btn">View on GitHub</a>
+            <a href="{{ item.report_url }}" target="_blank" class="btn">View Report</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+
   </section>
 </article>

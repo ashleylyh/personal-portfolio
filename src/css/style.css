@@ -28,15 +28,15 @@
       hsla(240, 2%, 11%, 0) 100%
     ),
     hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
+  --bg-gradient-main-1: linear-gradient(
     to bottom right,
     hsl(195, 53%, 79%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
-  --bg-gradient-yellow-2: linear-gradient(
+  --bg-gradient-main-2: linear-gradient(
       135deg,
-      hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%
+      hsla(181, 100%, 71%, 0.25) 0%,
+      hsla(193, 100%, 68%, 0) 59.86%
     ),
     hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -44,7 +44,7 @@
     hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
-  --text-gradient-yellow: linear-gradient(
+  --text-gradient-main: linear-gradient(
     to right,
     hsl(195, 53%, 79%),
     hsl(180, 42%, 67%)
@@ -59,8 +59,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(195, 53%, 79%);
-  --vegas-gold: hsl(180, 42%, 67%);
+  --main-1: hsl(195, 53%, 79%);
+  --main-2: hsl(180, 42%, 67%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -133,7 +133,7 @@ button,
 time,
 span {
   display: block;
-  color: var(--vegas-gold);
+  color: var(--main-2);
 }
 
 button {
@@ -153,12 +153,12 @@ textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--main-1);
   color: var(--smoky-black);
 }
 
 :focus {
-  outline-color: var(--orange-yellow-crayola);
+  outline-color: var(--main-1);
 }
 
 html {
@@ -200,7 +200,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -273,7 +273,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-main);
   border-radius: 3px;
 }
 
@@ -288,7 +288,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: var(--main-1);
   border-radius: 5px;
 }
 
@@ -378,7 +378,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -398,12 +398,12 @@ main {
 
 .info_more-btn:hover,
 .info_more-btn:focus {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--bg-gradient-main-1);
 }
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before {
-  background: var(--bg-gradient-yellow-2);
+  background: var(--bg-gradient-main-2);
 }
 
 .info_more-btn span {
@@ -511,7 +511,7 @@ main {
 }
 
 .navbar-link.active {
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 /*-----------------------------------*\
@@ -571,12 +571,12 @@ main {
 
 .service-icon-box {
   margin-bottom: 10px;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 .service-icon-box ion-icon {
   margin: auto;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   font-size: 30px;
 }
 
@@ -634,7 +634,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   /* width: 80px;
   height: 80px; */
   /* display: flex;
@@ -766,7 +766,7 @@ main {
 
 .modal-img-wrapper > img {
   display: none;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 .modal-title {
@@ -896,7 +896,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--main-2);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -918,7 +918,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-main);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -955,7 +955,7 @@ main {
   top: 0;
   font-size: 1em;
   line-height: 1.2;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 .experience-tech {
@@ -1007,7 +1007,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-main);
   height: 100%;
   border-radius: inherit;
 }
@@ -1051,7 +1051,7 @@ main {
   top: 0;
   font-size: 1em;
   line-height: 1.2;
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 /*-----------------------------------*\
@@ -1179,7 +1179,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1229,6 +1229,94 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+/*-----------------------------------*\
+  #PORTFOLIO – project detail modal
+\*-----------------------------------*/
+.project-modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-modal.active {
+  display: flex; /* now visible and centered */
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content {
+  background: var(--eerie-black-2);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-5);
+  color: var(--white-2);
+
+  width: min(600px, 80vw); /* at most 600px, otherwise 80% of viewport width */
+  max-height: 80vh; /* never taller than 80% of viewport height */
+  overflow-y: auto; /* scroll if content is too tall */
+
+  /* ensure it floats above the overlay */
+  position: relative;
+  z-index: 1001;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--white-2);
+  cursor: pointer;
+}
+
+.modal-detail {
+  margin: 16px 0;
+  font-size: var(--fs-7);
+  line-height: 1.6;
+  color: var(--light-gray);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.modal-image {
+  display: block;
+  width: 100%; /* fill the modal’s width */
+  max-height: 400px; /* optional cap so it doesn’t blow up */
+  object-fit: cover; /* crop or letterbox to fit */
+  border-radius: 8px; /* match your modal’s rounded corners */
+  margin: 12px 0; /* space above & below */
+}
+
+.btn {
+  display: inline-block;
+  background: var(--main-1);
+  color: var(--smoky-black);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--main-2);
 }
 
 /*-----------------------------------*\
@@ -1313,7 +1401,7 @@ main {
 }
 
 .blog-post-item > a:hover .blog-item-title {
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
 }
 
 .blog-text {
@@ -1378,7 +1466,7 @@ main {
 }
 
 .form-input:focus {
-  border-color: var(--orange-yellow-crayola);
+  border-color: var(--main-1);
 }
 
 textarea.form-input {
@@ -1401,7 +1489,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  color: var(--main-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1430,11 +1518,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--bg-gradient-main-1);
 }
 
 .form-btn:hover::before {
-  background: var(--bg-gradient-yellow-2);
+  background: var(--bg-gradient-main-2);
 }
 
 .form-btn:disabled {
@@ -1884,7 +1972,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--main-1);
   }
 
   /* portfolio and blog grid */
