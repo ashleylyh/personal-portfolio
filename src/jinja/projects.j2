@@ -46,10 +46,19 @@
                  alt="{{ item.title }}"
                  loading="lazy">
             {% if item.detail %}
+            <!-- opens modal -->
             <div class="project-item-icon-box" data-modal-open>
               <ion-icon name="eye-outline"></ion-icon>
             </div>
-            {% endif %}
+            {% elif item.url %}
+            <!-- link icon goes to URL -->
+            <a class="project-item-icon-box link-icon"
+              href="{{ item.url }}"
+              target="_blank"
+              title="Visit project">
+              <ion-icon name="link-outline"></ion-icon>
+            </a>
+          {% endif %}
           </figure>
 
           <h3 class="project-title">{{ item.title }}</h3>

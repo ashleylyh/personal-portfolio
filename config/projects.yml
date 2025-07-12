@@ -23,7 +23,7 @@ PROJECTS:
   - title: "Deepfake Image Classification"
     category: "AI"
     image: "src/images/comp4471.png"
-    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+    url: ""
     report_url: ""
     detail: |
       This project is part of my Deep Learning in Computer Vision course (COMP4471). Our project focuses on addressing the classification challenge: determining the most effective approach for distinguishing real images from AI-generated ones.
@@ -41,34 +41,135 @@ PROJECTS:
   - title: "AdaIN Style Transfer Model"
     category: "AI"
     image: "src/images/comp4211_pa2.jpg"
-    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+    url: ""
+    report_url: ""
+    detail: |
+      As part of the HKUST Machine Learning course (COMP4211), this project focused on implementing CNN-based generative models for data augmentation to enhance classification tasks.
+
+      Key tasks included:
+      - Implementing the AdaIN Style Transfer Model for style transfer tasks.
+      - Generating synthetic data to augment the training dataset.
+      - Applying the generated data to improve classification task accuracy.
+
+      The project was primarily executed using TensorFlow, and Keras to build and apply the generative models, improving model performance through data augmentation. 
+
 
   - title: "Machine Learning Exploration"
     category: "AI"
     image: "src/images/comp4211_pa1.jpg"
-    url: "https://github.com/ivansaul/flutter_travel_news_app#screenshots"
+    url: ""
+    report_url: ""
+    detail: |
+      As part of the HKUST Machine Learning course (COMP4211), this project focused on mastering data preprocessing and feature engineering techniques.
+      
+      Key tasks included:
+      - Data preprocessing to establish a solid foundation for model performance.
+      - Implementing Linear Regression and Feedforward Neural Networks for regression tasks.
+      - Utilizing Logistic Regression and Feedforward Neural Networks for classification tasks.
+      - Conducting hyperparameter tuning to optimize model performance.
+
+      The project was primarily executed using Pandas, Matplotlib, and Scikit-learn to practice essential machine learning techniques and refine feature engineering skills. 
+  
+  - title: "Serverless Image Classification"
+    category: "Cloud Computing"
+    image: "src/images/comp4651.jpg"
+    url: ""
+    report_url: ""
+    detail: |
+      This project is part of my Cloud Computing course (COMP4651), which highlights the potential of serverless architectures for deploying ML models, focusing on OpenFaaS, an open-source serverless platform running on Kubernetes. 
+      We deployed a lightweight ML model, MobileNetV2, using both serverless and traditional server-based architectures to compare their advantages and limitations.
+      
+      Serverless Deployment:
+      - A local, single-node Kubernetes cluster is configured using Minikube.
+      - OpenFaaS is installed via Helm for structured component management.
+      - A new Python Flask-based function is developed to load the MobileNetV2 model, create an inference pipeline, and handle incoming classification requests.
+      - The function is containerized and deployed using faas-cli, enabling efficient and scalable remote inference.
+      
+      ML Model Selection: MobileNetV2, pre-trained on ImageNet, is chosen for its lightweight design and suitability for resource-constrained environments.
+      
+      This methodology underscores the benefits of serverless architectures, such as dynamic resource allocation and reduced maintenance overhead, while highlighting their applicability in real-world ML scenarios. We also compare and discuss the advantage and limitation among several aspects including scalability, cost, and latanct etc.The project was primarily executed using OpenFaaS, Kubernetes, and Docker to deploy the ML model and evaluate the performance of serverless architectures for ML deployment in Python Flask. 
 
   - title: "Hong Kong Horse Racing Prediction"
     category: "AI"
     image: "src/images/comp4211_project.jpg"
-    url: "https://github.com/ivansaul/codigo_facilito_downloader"
+    url: ""
+    report_url: ""
+    detail: |
+      As part of my Machine Learning course (COMP4211), this project focuses on using supervised learning models to predict horse race outcomes. The task is formulated as a pointwise Learning to Rank (LTR) problem, where the objective is to rank horses based on their predicted finishing positions in a race.
+
+      Key tasks included:
+      - Baseline Model: A simple model that outputs the average target value as the predicted rank for any input.
+      - Supervised Regression Models: Implementing and training linear regression, multilayer perceptron, and random forest regressor models to predict the race outcomes.
+      - Feature Engineering: Extensive feature engineering was performed to extract key insights from the historical race data, such as jockey and horse performance, track conditions, and race distance, to improve model accuracy.
+      - Learning to Rank: Incorporating a pointwise Learning to Rank model approach combined with regression to rank the horses based on their predicted finishing times.
+
+      The project was primarily executed using Python and libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow to implement machine learning models and perform the necessary data transformations and evaluations. By focusing on the top four positions in the race, the model aligns with common betting strategies, enhancing the prediction of horse rankings for more effective betting strategies. 
+
 
   - title: "Auto Pet Feeder"
     category: "Embedded Systems"
     image: "src/images/elec3300.jpg"
-    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+    url: ""
+    report_url: ""
+    detail: |
+      This project is a part of my Embedded System course. We have designed and implemented a auto pet feeder using STM32 main board.
+
+      The component includes:
+      STM32 Main Board which control the main pet feeder which include several sensors:
+      - OV7725 Camera to capture the pet
+      - SG90 Servo Motor to open gate and let the food drop
+      - ADC Controller
+      - HX711 Weight Sensor to detect if the food drops
+      - MPU6050 Accelerometer to detect if the bowl shake (the pet is eating)
+      - HC-SR04 Ultrasonic Sensor to detect if the pet comes
+      - LoRA for receiveing pet location
+      Another STM32 Slave Board which serve as the pet tracker to let the owner know where the pet is:
+      - NEO-6M GPS Module to track the pet location
+      - LoRA to send the pet location
 
   - title: "Portraiture Image Processing"
     category: "Image Processing"
     image: "src/images/imageprocessing.jpg"
-    url: "https://github.com/ivansaul/flutter_todo_app#screenshots"
+    url: ""
+    report_url: ""
+    detail: |
+      This project is a part of my Image Processing course. This project focuses on developing a "portrait mode" for images by blurring the background while preserving the details of the face or person using MATLAB. To achieve this, a combination of image processing techniques is applied in a multi-stage approach. The stages and methods used include:
+
+      1. Preprocessing:
+      Histogram Equalization: Enhances contrast by adjusting the intensity distribution across the image, improving feature clarity before further processing
+      2.Sharpening: Highlights edges and fine details, ensuring the face/person remains distinct during the background blur application.
+      3. Edge Detection:
+      Thresholding: Identifies and separates the subject from the background by detecting intensity differences, forming the basis for segmentation
+      4. Finalization:
+      Combines outputs from the preprocessing and edge detection stages to apply targeted background blur while retaining the sharpness and details of the subject.
+
+      This project emphasizes the integration of these techniques across different stages to achieve an optimal balance of background blur and subject clarity, delivering a high-quality portrait effect. 
 
   - title: "Height Field Rendering"
     category: "Computer Graphics"
     image: "src/images/computergraphic.jpg"
-    url: "https://github.com/ivansaul/flutter_cinemapedia_app#screenshots"
+    url: ""
+    report_url: ""
+    detail: |
+      This project is a part of my Computer Graphic course in Chalmers University of Technology.This project involves generating a flat triangle mesh and rendering it with dynamic vertex displacement using a heightfield texture or a procedurally computed height map using OpenGL. The primary objective is to create a visually realistic terrain surface by manipulating vertex positions and computing normals for accurate shading. The implementation proceeds as follows:
+      
+      1. Mesh Generation:
+      A flat triangle mesh is generated in a Vertex Array Object (VAO) with N triangle edges per side.
+      This step is performed only once, preparing the mesh for rendering.
+      2. Rendering Pipeline:
+      A draw call is made to render the flat mesh.
+      The vertex shader dynamically adjusts vertex positions based on heightfield data or procedural computations.
+      3. Vertex Shader Operations:
+      Heightfield Sampling: The heightfield texture is sampled, or a procedural function is used to determine the water/terrain height.
+      Vertex Offset: Each vertex is offset in the world-up direction based on the sampled or computed height.
+      Normal Computation: Normals are derived from the heightfield to ensure accurate lighting calculations.
+      4. Shading and Texturing:
+      Standard shading techniques are applied to simulate realistic lighting.
+      The diffuse color for the surface is fetched from an aerial photo texture, enhancing visual fidelity.
+
+      This approach combines procedural and texture-driven methods to create dynamic, textured surfaces with realistic terrain features, highlighting the interplay between geometry manipulation and shading in real-time rendering. 
 
   - title: "Design Portfolio"
     category: "Art & Design"
     image: "src/images/portfolio.png"
-    url: "https://github.com/ivansaul/flutter_coffee_shop_app#screenshots"
+    url: "https://www.canva.com/design/DAFLjrktb2I/7MmoxZCiRWeZVE61axh2rw/view?utm_content=DAFLjrktb2I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h45418e1a61"

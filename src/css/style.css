@@ -1120,7 +1120,11 @@ main {
 .select-item button:hover {
   --eerie-black-2: hsl(240, 2%, 20%);
 }
+/*-----------------------------------*\
+  #PORTFOLIO – Project Grid & Icons
+\*-----------------------------------*/
 
+/* 1. Grid layout */
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1128,28 +1132,24 @@ main {
   margin-bottom: 10px;
 }
 
+/* 2. Show/hide items */
 .project-item {
   display: none;
 }
-
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
 }
-
 @keyframes scaleUp {
-  0% {
+  from {
     transform: scale(0.5);
   }
-  100% {
+  to {
     transform: scale(1);
   }
 }
 
-.project-item > a {
-  width: 100%;
-}
-
+/* 3. Image container */
 .project-img {
   position: relative;
   width: 100%;
@@ -1158,28 +1158,32 @@ main {
   overflow: hidden;
   margin-bottom: 15px;
 }
-
 .project-img::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: transparent;
   z-index: 1;
   transition: var(--transition-1);
 }
-
-.project-item > a:hover .project-img::before {
+/* darken on hover */
+.project-img:hover::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
+/* zoom image on hover */
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+.project-img:hover img {
+  transform: scale(1.1);
+}
 
+/* 4. Icon box (eye or link) */
 .project-item-icon-box {
   --scale: 0.8;
-
-  background: var(--jet);
-  color: var(--main-1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1187,36 +1191,31 @@ main {
   font-size: 20px;
   padding: 18px;
   border-radius: 12px;
+  background: var(--jet);
+  color: var(--main-1);
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
   transition: var(--transition-1);
 }
-
-.project-item > a:hover .project-item-icon-box {
+/* show icon when hovering the image */
+.project-img:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
-
+/* ensure link-icon variant has pointer cursor */
+.project-item-icon-box.link-icon {
+  cursor: pointer;
+  text-decoration: none;
+}
 .project-item-icon-box ion-icon {
   --ionicon-stroke-width: 50px;
 }
 
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition-1);
-}
-
-.project-item > a:hover img {
-  transform: scale(1.1);
-}
-
+/* 5. Text under image */
 .project-title,
 .project-category {
   margin-left: 10px;
 }
-
 .project-title {
   color: var(--white-2);
   font-size: var(--fs-5);
@@ -1224,7 +1223,6 @@ main {
   text-transform: capitalize;
   line-height: 1.3;
 }
-
 .project-category {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
